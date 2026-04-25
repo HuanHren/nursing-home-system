@@ -7,6 +7,7 @@
         <el-menu-item index="/elderly">老人信息管理</el-menu-item>
         <el-menu-item index="/staff">员工信息管理</el-menu-item>
         <el-menu-item index="/room-beds">房间床位管理</el-menu-item>
+        <el-menu-item index="/health-records">健康档案管理</el-menu-item>
       </el-menu>
     </el-aside>
     <el-container>

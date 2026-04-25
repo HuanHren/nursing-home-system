@@ -14,12 +14,17 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\RoomBedServi
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\vo\LoginVO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\entity\RoomBed.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\common\Result.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\HealthRecordMapper.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\entity\HealthRecord.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\RoomBedController.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\HealthRecordController.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\HealthRecordServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\StaffInfoController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\SysUserServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\LoginDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\SysUserMapper.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\entity\Elderly.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\HealthRecordService.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\config\MyBatisPlusConfig.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\ElderlyController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\StaffInfoService.java
@@ -27,5 +32,6 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\ElderlyQueryDTO.
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\StaffInfoMapper.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\StaffInfoQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\StaffInfoServiceImpl.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\HealthRecordQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\AuthController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\ElderlyMapper.java
