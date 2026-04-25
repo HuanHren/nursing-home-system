@@ -141,15 +141,20 @@ CREATE TABLE health_record (
 CREATE TABLE nursing_record (
   id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
   elderly_id BIGINT NOT NULL COMMENT '老人ID',
-  staff_id BIGINT NOT NULL COMMENT '员工ID',
-  care_type VARCHAR(50) DEFAULT NULL COMMENT '护理类型',
-  care_content VARCHAR(1000) DEFAULT NULL COMMENT '护理内容',
-  care_time DATETIME DEFAULT NULL COMMENT '护理时间',
+  elderly_name VARCHAR(50) NOT NULL COMMENT '老人姓名',
+  staff_id BIGINT NOT NULL COMMENT '护理人员ID',
+  staff_name VARCHAR(50) NOT NULL COMMENT '护理人员姓名',
+  nursing_type VARCHAR(50) DEFAULT NULL COMMENT '护理类型',
+  nursing_content VARCHAR(1000) DEFAULT NULL COMMENT '护理内容',
+  nursing_result VARCHAR(1000) DEFAULT NULL COMMENT '护理结果',
+  nursing_date DATE DEFAULT NULL COMMENT '护理日期',
+  nursing_time TIME DEFAULT NULL COMMENT '护理时间',
+  status VARCHAR(20) NOT NULL DEFAULT '正常' COMMENT '状态',
   remark VARCHAR(500) DEFAULT NULL COMMENT '备注',
   create_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   CONSTRAINT fk_nursing_elderly FOREIGN KEY (elderly_id) REFERENCES elderly(id),
-  CONSTRAINT fk_nursing_staff FOREIGN KEY (staff_id) REFERENCES staff(id)
+  CONSTRAINT fk_nursing_staff_info FOREIGN KEY (staff_id) REFERENCES staff_info(id)
 ) COMMENT='护理记录表';
 
 CREATE TABLE payment (
