@@ -2,7 +2,9 @@ com\nursinghome\config\CorsConfig.class
 com\nursinghome\service\impl\ElderlyServiceImpl.class
 com\nursinghome\dto\StaffInfoQueryDTO.class
 com\nursinghome\common\Result.class
+com\nursinghome\entity\RoomBed.class
 com\nursinghome\service\ElderlyService.class
+com\nursinghome\mapper\RoomBedMapper.class
 com\nursinghome\config\GlobalExceptionHandler.class
 com\nursinghome\controller\AuthController.class
 com\nursinghome\mapper\ElderlyMapper.class
@@ -11,13 +13,17 @@ com\nursinghome\entity\SysUser.class
 com\nursinghome\service\StaffInfoService.class
 com\nursinghome\config\MyBatisPlusConfig.class
 com\nursinghome\dto\LoginDTO.class
+com\nursinghome\service\RoomBedService.class
 com\nursinghome\entity\StaffInfo.class
 com\nursinghome\mapper\StaffInfoMapper.class
+com\nursinghome\controller\RoomBedController.class
+com\nursinghome\service\impl\RoomBedServiceImpl.class
 com\nursinghome\service\impl\SysUserServiceImpl.class
 com\nursinghome\entity\Elderly.class
 com\nursinghome\vo\LoginVO.class
 com\nursinghome\NursingHomeApplication.class
 com\nursinghome\service\impl\StaffInfoServiceImpl.class
+com\nursinghome\dto\RoomBedQueryDTO.class
 com\nursinghome\controller\ElderlyController.class
 com\nursinghome\dto\ElderlyQueryDTO.class
 com\nursinghome\controller\StaffInfoController.class
