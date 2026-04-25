@@ -17,6 +17,7 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\StaffInfo
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\PaymentRecordServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\SysUserServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\SysUserMapper.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\DashboardServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\StaffInfoMapper.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\StaffInfoServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\AuthController.java
@@ -32,10 +33,13 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\common\PageResult.ja
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\RoomBedQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\RoomBedService.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\PaymentRecordQueryDTO.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\DashboardService.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\NursingRecordService.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\HealthRecordMapper.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\DashboardController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\NoticeQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\entity\NursingRecord.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\vo\DashboardSummaryVO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\HealthRecordController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\HealthRecordServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\NursingRecordMapper.java
