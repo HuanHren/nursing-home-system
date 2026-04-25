@@ -3,7 +3,7 @@
     <div class="dashboard-hero">
       <div>
         <h2>欢迎使用中小型养老院信息管理系统</h2>
-        <p>集中管理老人档案、员工、床位、健康、护理、缴费和公告信息，方便日常运营和毕业答辩演示。</p>
+        <p>面向养老院日常运营，集中展示老人、员工、床位、健康、护理、缴费和公告数据。</p>
       </div>
       <el-button type="primary" :loading="loading" @click="loadData">刷新数据</el-button>
     </div>
@@ -144,10 +144,10 @@ onMounted(loadData)
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 16px;
-  padding: 20px 24px;
+  padding: 22px 24px;
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .dashboard-hero h2 {
@@ -216,7 +216,7 @@ onMounted(loadData)
   padding: 12px;
   background: #f9fafb;
   border: 1px solid #e5e7eb;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #374151;
 }
 </style>
