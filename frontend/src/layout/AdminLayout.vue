@@ -9,6 +9,7 @@
         <el-menu-item index="/room-beds">房间床位管理</el-menu-item>
         <el-menu-item index="/health-records">健康档案管理</el-menu-item>
         <el-menu-item index="/nursing-records">护理记录管理</el-menu-item>
+        <el-menu-item index="/payment-records">缴费管理</el-menu-item>
       </el-menu>
     </el-aside>
     <el-container>

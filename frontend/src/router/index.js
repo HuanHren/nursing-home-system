@@ -7,6 +7,7 @@ import StaffInfoList from '../views/staff/StaffInfoList.vue'
 import RoomBedList from '../views/room/RoomBedList.vue'
 import HealthRecordList from '../views/health/HealthRecordList.vue'
 import NursingRecordList from '../views/nursing/NursingRecordList.vue'
+import PaymentRecordList from '../views/payment/PaymentRecordList.vue'
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
         path: 'nursing-records',
         name: 'NursingRecordList',
         component: NursingRecordList
+      },
+      {
+        path: 'payment-records',
+        name: 'PaymentRecordList',
+        component: PaymentRecordList
       }
     ]
   }

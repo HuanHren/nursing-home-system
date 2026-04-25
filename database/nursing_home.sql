@@ -7,6 +7,7 @@ USE nursing_home;
 SET FOREIGN_KEY_CHECKS = 0;
 
 DROP TABLE IF EXISTS notice;
+DROP TABLE IF EXISTS payment_record;
 DROP TABLE IF EXISTS payment;
 DROP TABLE IF EXISTS nursing_record;
 DROP TABLE IF EXISTS health_record;
@@ -168,6 +169,24 @@ CREATE TABLE payment (
   create_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   CONSTRAINT fk_payment_elderly FOREIGN KEY (elderly_id) REFERENCES elderly(id)
+) COMMENT='缴费记录表';
+
+CREATE TABLE payment_record (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '主键',
+  elderly_id BIGINT NOT NULL COMMENT '老人ID',
+  elderly_name VARCHAR(50) NOT NULL COMMENT '老人姓名',
+  fee_type VARCHAR(30) DEFAULT NULL COMMENT '费用类型',
+  amount DECIMAL(10,2) NOT NULL DEFAULT 0 COMMENT '应缴金额',
+  paid_amount DECIMAL(10,2) NOT NULL DEFAULT 0 COMMENT '实缴金额',
+  payment_status VARCHAR(20) NOT NULL DEFAULT '未缴费' COMMENT '缴费状态',
+  payment_method VARCHAR(20) DEFAULT NULL COMMENT '缴费方式',
+  payment_date DATE DEFAULT NULL COMMENT '缴费日期',
+  billing_month VARCHAR(20) DEFAULT NULL COMMENT '账单月份',
+  operator_name VARCHAR(50) DEFAULT NULL COMMENT '经办人',
+  remark VARCHAR(500) DEFAULT NULL COMMENT '备注',
+  create_time DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  CONSTRAINT fk_payment_record_elderly FOREIGN KEY (elderly_id) REFERENCES elderly(id)
 ) COMMENT='缴费记录表';
 
 CREATE TABLE notice (
