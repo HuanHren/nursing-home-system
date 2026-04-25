@@ -2,9 +2,9 @@
   <div class="page dashboard-page">
     <section class="dashboard-banner">
       <div class="banner-content">
-        <div class="banner-badge">养老院综合运营看板</div>
-        <h2>欢迎使用中小型养老院信息管理系统</h2>
-        <p>集中展示老人、员工、床位、健康、护理、缴费和公告数据，帮助管理人员快速掌握院内运营状态。</p>
+        <div class="banner-badge">{{ dashboardBadge }}</div>
+        <h2>{{ dashboardTitle }}</h2>
+        <p>{{ dashboardDesc }}</p>
       </div>
       <div class="banner-actions">
         <div class="banner-date">{{ todayText }}</div>
@@ -144,8 +144,10 @@ import {
   Wallet
 } from '@element-plus/icons-vue'
 import { getDashboardSummary } from '../../api/dashboard'
+import { useUserStore } from '../../stores/user'
 
 const loading = ref(false)
+const userStore = useUserStore()
 const summary = reactive({
   elderlyCount: 0,
   staffCount: 0,
@@ -164,6 +166,23 @@ const todayText = new Date().toLocaleDateString('zh-CN', {
   month: 'long',
   day: 'numeric',
   weekday: 'long'
+})
+
+const role = computed(() => userStore.userInfo?.role || 'FAMILY')
+const dashboardBadge = computed(() => {
+  if (role.value === 'ADMIN') return '后台管理中心'
+  if (role.value === 'STAFF') return '员工工作台'
+  return '家属用户中心'
+})
+const dashboardTitle = computed(() => {
+  if (role.value === 'ADMIN') return '欢迎使用中小型养老院信息管理系统'
+  if (role.value === 'STAFF') return '欢迎进入员工工作台'
+  return '欢迎进入家属用户中心'
+})
+const dashboardDesc = computed(() => {
+  if (role.value === 'ADMIN') return '集中展示老人、员工、床位、健康、护理、缴费和公告数据，帮助管理人员快速掌握院内运营状态。'
+  if (role.value === 'STAFF') return '快速查看老人信息、床位状态、健康档案和护理记录，支持日常护理工作开展。'
+  return '查看绑定老人的健康档案、护理记录、缴费情况和养老院公告，方便家属了解照护情况。'
 })
 
 const iconMap = {

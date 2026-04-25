@@ -30,14 +30,16 @@ ALTER TABLE sys_user AUTO_INCREMENT = 1;
 
 SET FOREIGN_KEY_CHECKS = 1;
 
-INSERT INTO sys_user (id, username, password, real_name, role, phone, status) VALUES
-(1, 'admin', '123456', '系统管理员', 'admin', '13800000000', 1);
-
 INSERT INTO elderly (id, name, gender, age, id_card, phone, family_phone, address, check_in_date, status, remark) VALUES
 (1, '张建国', '男', 78, '110101194801012311', '13900010001', '13910010001', '北京市朝阳区幸福小区', '2025-03-12', '在住', '高血压，生活基本自理'),
 (2, '李秀兰', '女', 82, '110101194403152322', '13900010002', '13910010002', '北京市海淀区安康路', '2025-05-20', '在住', '需关注血糖'),
 (3, '王德福', '男', 75, '110101195001203333', '13900010003', '13910010003', '北京市丰台区康乐街', '2025-08-01', '在住', '康复训练中'),
 (4, '赵桂英', '女', 80, '110101194608183344', '13900010004', '13910010004', '北京市西城区平安里', '2025-09-10', '在住', '饮食清淡');
+
+INSERT INTO sys_user (id, username, password, real_name, phone, role, status, elderly_id) VALUES
+(1, 'admin', '123456', '系统管理员', '13800000000', 'ADMIN', '正常', NULL),
+(2, 'staff01', '123456', '刘敏', '13820010001', 'STAFF', '正常', NULL),
+(3, 'family01', '123456', '张建国家属', '13910010001', 'FAMILY', '正常', 1);
 
 INSERT INTO staff (id, name, gender, age, phone, position, entry_date, status, remark) VALUES
 (1, '刘敏', '女', 32, '13820010001', '护士', '2024-02-01', '在职', '护理经验丰富'),

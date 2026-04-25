@@ -3,18 +3,18 @@
     <div class="login-visual">
       <div class="visual-badge">毕业设计演示系统</div>
       <h1>中小型养老院信息管理系统</h1>
-      <p>面向养老院日常运营管理，覆盖老人档案、床位、健康、护理、缴费和公告等核心业务。</p>
+      <p>支持管理员、员工、家属多角色登录，覆盖养老院日常管理的核心业务流程。</p>
       <div class="visual-cards">
-        <div>老人信息</div>
-        <div>健康档案</div>
-        <div>护理记录</div>
+        <div>管理员端</div>
+        <div>员工工作台</div>
+        <div>家属用户中心</div>
       </div>
     </div>
 
     <el-card class="login-box">
       <div class="login-title">
         <h2>系统登录</h2>
-        <span>默认账号：admin / 123456</span>
+        <span>管理员：admin / 123456，员工：staff01 / 123456，家属：family01 / 123456</span>
       </div>
       <el-form :model="form" :rules="rules" ref="formRef" @keyup.enter="handleLogin">
         <el-form-item prop="username">
@@ -27,6 +27,10 @@
           登录
         </el-button>
       </el-form>
+      <div class="register-link">
+        还没有家属账号？
+        <el-button type="primary" link @click="router.push('/register')">注册账号</el-button>
+      </div>
     </el-card>
   </div>
 </template>
@@ -71,7 +75,7 @@ async function handleLogin() {
 .login-page {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: minmax(420px, 1fr) 460px;
+  grid-template-columns: minmax(420px, 1fr) 480px;
   align-items: center;
   gap: 42px;
   padding: 56px 9vw;
@@ -81,8 +85,8 @@ async function handleLogin() {
     linear-gradient(135deg, #eaf3ff 0%, #f8fbff 50%, #edfdf6 100%);
 }
 
-.login-visual {
-  color: #10224a;
+.login-visual,
+.login-box {
   animation: loginFade 0.55s ease both;
 }
 
@@ -100,6 +104,7 @@ async function handleLogin() {
 .login-visual h1 {
   max-width: 620px;
   margin: 0;
+  color: #10224a;
   font-size: 42px;
   line-height: 1.2;
   font-weight: 800;
@@ -135,7 +140,6 @@ async function handleLogin() {
   background: rgba(255, 255, 255, 0.86);
   box-shadow: 0 28px 60px rgba(15, 23, 42, 0.14);
   backdrop-filter: blur(18px);
-  animation: loginFade 0.55s ease 0.08s both;
 }
 
 .login-title {
@@ -151,12 +155,20 @@ async function handleLogin() {
 .login-title span {
   color: #667085;
   font-size: 14px;
+  line-height: 1.6;
 }
 
 .login-button {
   width: 100%;
   margin-top: 6px;
   border-radius: 12px;
+}
+
+.register-link {
+  margin-top: 18px;
+  text-align: center;
+  color: #667085;
+  font-size: 14px;
 }
 
 @keyframes loginFade {

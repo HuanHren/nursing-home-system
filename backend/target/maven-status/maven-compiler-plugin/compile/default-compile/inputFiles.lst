@@ -5,6 +5,7 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\RoomBed
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\ElderlyServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\NoticeMapper.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\NursingRecordController.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\SysUserQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\config\CorsConfig.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\vo\LoginVO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\entity\RoomBed.java
@@ -17,6 +18,7 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\StaffInfo
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\PaymentRecordServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\SysUserServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\SysUserMapper.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\RegisterDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\DashboardServiceImpl.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\StaffInfoMapper.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\StaffInfoServiceImpl.java
@@ -31,6 +33,7 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\SysUserServi
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\ElderlyService.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\common\PageResult.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\RoomBedQueryDTO.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\SysUserController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\RoomBedService.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\PaymentRecordQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\DashboardService.java
@@ -39,6 +42,7 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\mapper\HealthRecordM
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\DashboardController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\NoticeQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\entity\NursingRecord.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\config\AuthInterceptor.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\vo\DashboardSummaryVO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\HealthRecordController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\impl\HealthRecordServiceImpl.java
@@ -51,6 +55,7 @@ D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\config\MyBatisPlusCo
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\controller\ElderlyController.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\entity\PaymentRecord.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\StaffInfoService.java
+D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\config\WebConfig.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\ElderlyQueryDTO.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\service\NoticeService.java
 D:\CODEtest\CodexTest\backend\src\main\java\com\nursinghome\dto\StaffInfoQueryDTO.java

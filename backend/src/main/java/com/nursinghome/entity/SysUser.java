@@ -15,7 +15,8 @@ public class SysUser {
     private String realName;
     private String role;
     private String phone;
-    private Integer status;
+    private String status;
+    private Long elderlyId;
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
 }

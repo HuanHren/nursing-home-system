@@ -8,8 +8,15 @@ const request = axios.create({
 
 request.interceptors.request.use((config) => {
   const token = localStorage.getItem('token')
+  const userInfo = JSON.parse(localStorage.getItem('userInfo') || 'null')
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
+  }
+  if (userInfo?.role) {
+    config.headers['X-User-Role'] = userInfo.role
+  }
+  if (userInfo?.elderlyId) {
+    config.headers['X-Elderly-Id'] = userInfo.elderlyId
   }
   return config
 })

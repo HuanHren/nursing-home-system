@@ -262,6 +262,20 @@ body {
   padding: 22px;
 }
 
+.role-family .page-header > .el-button,
+.role-family .el-table .el-button {
+  display: none;
+}
+
+.role-staff.route-elderly .page-header > .el-button,
+.role-staff.route-elderly .el-table .el-button,
+.role-staff.route-room-beds .page-header > .el-button,
+.role-staff.route-room-beds .el-table .el-button,
+.role-staff.route-notices .page-header > .el-button,
+.role-staff.route-notices .el-table .el-button {
+  display: none;
+}
+
 @keyframes pageFadeIn {
   from {
     opacity: 0;

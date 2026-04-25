@@ -12,4 +12,5 @@ public class LoginVO {
     private String username;
     private String realName;
     private String role;
+    private Long elderlyId;
 }

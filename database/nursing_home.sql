@@ -26,9 +26,10 @@ CREATE TABLE sys_user (
   username VARCHAR(50) NOT NULL UNIQUE,
   password VARCHAR(100) NOT NULL,
   real_name VARCHAR(50) DEFAULT NULL,
-  role VARCHAR(20) NOT NULL DEFAULT 'admin',
   phone VARCHAR(20) DEFAULT NULL,
-  status TINYINT NOT NULL DEFAULT 1,
+  role VARCHAR(20) NOT NULL DEFAULT 'FAMILY',
+  status VARCHAR(20) NOT NULL DEFAULT '正常',
+  elderly_id BIGINT DEFAULT NULL,
   create_time DATETIME DEFAULT CURRENT_TIMESTAMP,
   update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) COMMENT='系统用户表';
@@ -203,5 +204,5 @@ CREATE TABLE notice (
   update_time DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) COMMENT='公告表';
 
-INSERT INTO sys_user (username, password, real_name, role, phone, status)
-VALUES ('admin', '123456', '系统管理员', 'admin', '13800000000', 1);
+INSERT INTO sys_user (username, password, real_name, phone, role, status, elderly_id)
+VALUES ('admin', '123456', '系统管理员', '13800000000', 'ADMIN', '正常', NULL);
