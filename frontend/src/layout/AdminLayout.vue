@@ -5,6 +5,7 @@
       <el-menu router :default-active="route.path">
         <el-menu-item index="/dashboard">首页</el-menu-item>
         <el-menu-item index="/elderly">老人信息管理</el-menu-item>
+        <el-menu-item index="/staff">员工信息管理</el-menu-item>
       </el-menu>
     </el-aside>
     <el-container>

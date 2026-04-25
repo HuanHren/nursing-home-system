@@ -3,6 +3,7 @@ import Login from '../views/login/Login.vue'
 import AdminLayout from '../layout/AdminLayout.vue'
 import Dashboard from '../views/dashboard/Dashboard.vue'
 import ElderlyList from '../views/elderly/ElderlyList.vue'
+import StaffInfoList from '../views/staff/StaffInfoList.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
         path: 'elderly',
         name: 'ElderlyList',
         component: ElderlyList
+      },
+      {
+        path: 'staff',
+        name: 'StaffInfoList',
+        component: StaffInfoList
       }
     ]
   }
